@@ -38,7 +38,8 @@ const BasicForm = (props) => {
     isFormValid = true;
   }
 
-  const onFormSubmitHandler = () => {
+  const onFormSubmitHandler = (event) => {
+    event.preventDefault();
     if (!isFormValid) {
       return;
     }
